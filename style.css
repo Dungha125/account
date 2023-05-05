@@ -137,6 +137,46 @@ li a
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+    transition: height .2s ease;
+}
+
+.wrapper.active
+{
+    height: 520px;
+}
+
+.wrapper.active .form{
+    transition: .4s ease;
+    transform: translateX(-400px);
+}
+.wrapper.active .formdk{
+    transition: .4s ease;
+    transform: translateX(0px);
+}
+
+.wrapper .close
+{
+    position: absolute;
+    top:0;
+    right:0;
+    color: rebeccapurple;
+    width: 45px;
+    height: 45px;
+    font-size: 30px;
+    background-color: rgb(209, 168, 251);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius:20px;
+    transition: .2s ease;
+}
+.wrapper .close:hover
+{
+    color:azure;
+    background-color: rgb(164, 96, 233);
+    transition: .2s ease;
+    cursor: pointer;
 }
 .wrapper .form
 {
@@ -145,7 +185,16 @@ li a
     padding: 20px;
     color: rebeccapurple;
 }
-.form h2
+.wrapper .formdk
+{
+    position: absolute;
+    transform: translateX(400px);
+    width: 100%;
+    padding-top: 10px;
+    padding: 20px;
+    color: rebeccapurple;
+}
+h2
 {
     font-size: 2em;
     text-align: center;
@@ -193,6 +242,7 @@ li a
 .remember
 {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     margin: -10px 0 15px;
 }
@@ -200,10 +250,15 @@ li a
 {
     margin-right: 3px;
 }
+.remember a
+{
+    font-weight: 650;
+}
 .remember a:hover
 {
     color: rebeccapurple;
     text-decoration: underline;
+
 }
 .btn
 {
@@ -224,3 +279,18 @@ li a
     transition: none;
     cursor: pointer;
 }
+.login-register
+{
+    font-size: .9em;
+    text-align: center;
+    margin: 15px 0 10px;
+}
+.login-register p a
+{
+    font-weight: 650;
+}
+.login-register a:hover
+{
+    text-decoration: underline;
+}
+
