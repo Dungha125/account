@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,300&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+body
+{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("/Anh/anh-nen-trang-tinh-khoi_013900337.jpg");
+    color: aliceblue;
+}
+div{
+    display: block;
+}
+.thanh
+{
+    border-bottom: 2px inset rgb(193, 149, 238);
+    margin: 0 20px 10px;
+}
+.nav
+{
+    display: block;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgba(165,0,255,1) 0%, rgba(0,18,164,1) 100%);
+}
+.nav-bar
+{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    margin: 0 auto;
+}
+.menu a
+{
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+.list
+{
+    display: flex;
+}
+.list .navlist
+{
+    display: flex;
+    align-items: center;
+}
+.list .navlist li
+{
+    list-style: none;
+    margin: 0 10px;
+}
+.listmenu
+{  
+    list-style: none;
+    margin: 0 5px;
+}
+li a
+{
+    color: white;
+}
+.reg
+{
+    color: black;
+    padding: 10px 1rem;
+    border-radius: 10px;
+    background-color: rgb(251, 255, 131);
+    font-weight: 500;
+}
+.search
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.inputsearch
+{
+    width: 200px;
+    height: 24px;
+    border-radius: 50px;
+}
+.timkiem
+{
+    margin: 7px;
+    border-radius: 20px;
+}
+.timkiem i
+{
+    text-align: center;
+    border-radius: 10px;
+    margin: auto;
+    padding: 5px;
+}
+.timkiem i:hover
+{
+    color: white;
+    background-color: black;
+}
+.content
+{
+    display: flex;
+    margin-top: 90px;
+    padding: 50px;
+    width: 100%;
+    justify-content: center;
+}
+
+.wrapper
+{
+    position:relative;
+    width: 350px;
+    height: 390px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper .form
+{
+    width: 100%;
+    padding-top: 10px;
+    padding: 20px;
+    color: rebeccapurple;
+}
+.form h2
+{
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.input-box
+{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid rebeccapurple;
+    margin: 20px 0;
+}
+.input-box label
+{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-weight: 500;
+    pointer-events: none;
+}
+.input-box input:focus~label,
+.input-box input:valid~label
+{
+    top: -4px;
+}
+.input-box input
+{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: 1em;
+    color: rebeccapurple;
+    font-weight: 600;
+}
+.input-box .icon
+{
+    position: absolute;
+    right: 8px;
+    line-height: 55px;
+}
+.remember
+{
+    display: flex;
+    justify-content: space-between;
+    margin: -10px 0 15px;
+}
+.remember input
+{
+    margin-right: 3px;
+}
+.remember a:hover
+{
+    color: rebeccapurple;
+    text-decoration: underline;
+}
+.btn
+{
+    width: 100%;
+    height: 40px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 550;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(270deg, rgba(165,0,255,1) 0%, rgb(107, 124, 255) 80%);
+}
+.btn:hover
+{
+    color: rebeccapurple;
+    background: transparent;
+    border: 2px solid rebeccapurple;
+    transition: none;
+    cursor: pointer;
+}
